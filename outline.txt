@@ -1,0 +1,48 @@
+while not quit
+  next player
+    while match
+      active player clicks one card
+      active player clicks second card
+      if they match
+        move two cards to player's pile
+      else
+        break
+
+
+game
+ - board
+ - player
+ - cards
+ - in_progress
+  start()
+  quit()
+  nextPlayer()
+  firstCard()
+  secondCard()
+  moveCardsToPlayer(player)
+  draw()
+
+board
+ - board location
+ - cell size
+ - grid size
+ - [@card] card
+ - addCard(card)
+ - removeCard()
+ - draw()
+
+card
+ - # id
+ - @img: image
+ - location
+ - ghost_location
+ - draw()
+ - b flipped
+
+player
+ - @point: card location
+ - (card direction)?
+ - [@card] cards
+ - # color
+ - " name
+ - draw()
